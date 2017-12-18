@@ -1,7 +1,9 @@
 import Player from './Player';
 
-describe('Player', () => {
-  it('works', () => {
+const player1 = new Player('Player 1');
 
+describe('Player', () => {
+  it('has name', () => {
+    expect(player1.getName()).toBe('Player 1');
   });
 });
